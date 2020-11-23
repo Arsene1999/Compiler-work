@@ -1,0 +1,2 @@
+{A}
+entry(function bool ou_exclusivo (bool a, bool b): ( (a or b) && ! (a and b) ))

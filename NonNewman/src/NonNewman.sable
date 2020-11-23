@@ -1,0 +1,44 @@
+Package NonNewman;
+
+Helpers
+ digito = ['0'..'9'];
+ maiusculo = ['A'..'Z'];
+ minusculo = ['a'..'z'];
+ 
+ espaco = ' ';
+ under_score = '_';
+ rc = 13;
+ nl = 10;
+ 
+ coment_esq = '{';
+ coment_rig = '}';
+ 
+Tokens
+ entrada = 'entry';
+ call_func = 'function';
+ lambda = 'lambda';
+ tipo = ('int' | 'bool' | 'real');
+ cond_log = ('&&' | '!' | 'or');
+ cond_sint = ('if' | 'then' | 'else');
+ soma = '+';
+ subt = '-';
+ mult = '*';
+ div = '/';
+ mod = '%';
+ atribuidor = '=';
+ menor = '<';
+ maior = '>';
+ par_esq = '(';
+ par_dir = ')';
+ lbracket = '[';
+ rbracket = ']';
+ coma = ',';
+ dois_pontos = ':';
+ numero = digito+;
+ palavra = (maiusculo | minusculo | digito | under_score)+;
+ vazio = (espaco | rc | nl | [[coment_esq + maiusculo] + coment_rig])+;
+
+
+Ignored Tokens
+ vazio;
+ 

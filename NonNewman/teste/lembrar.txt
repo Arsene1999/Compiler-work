@@ -1,0 +1,1 @@
+any = ( palavra | dois_pontos | rbracket | lbracket | par_dir | par_esq | maior | menor | atribuidor | mod | div | mult | subt | soma | cond_sint | cond_log | tipo | lambda | call_func | entrada | numero);
